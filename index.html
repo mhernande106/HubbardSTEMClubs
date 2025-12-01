@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hubbard High School Clubs </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="crest">
+            <img src="Images/Hubbard Crest Final1.jpg" alt="Hubbard High School Logo" width="150" height="150">
+        </div>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="join.html">Join Us</a>
+        </nav>
+        <h1>Hubbard High School Clubs </h1>
+        <h2>Welcome to SWIT & MakerspaceClubs</h2>
+        <p>At Hubbard High School, we offer a variety of clubs to engage students in technology and creativity.
+            Our Chi-Craft (Minecraft Education), SWIT (Students Working in Technology) and Makerspace clubs provide opportunities for students
+            to explore their passions, collaborate on projects, and develop new skills.
+        </p>
+        <h2>Available Clubs</h2>
+        <table border="1px">
+            <tr>
+                <th>Club Name</th>
+                <th>Description</th>
+                <th>Meeting Time</th>
+            </tr>
+            <tr>
+                <td>Chi-Craft Club</td>
+                <td>Chi-Craft is a CS club where students practice creative story-telling and design concepts while learning programming
+                    skills with MakeCode. There are around 11 students active in the club.</td>
+                <td>Tuesdays at 3:30 PM - 5:00</td>
+            </tr>
+            <tr>
+                <td>SWIT Club</td>
+                <td>Students Working in Technology (SWiT) is CS/IT club that allows students to learn about computer hardware, build a
+                    computer, 3D print and obtain Industry Recognized Certifications. There are around 19 students active in the club.</td>
+                <td>Thursdays at 3:30 PM - 5:00 PM</td>
+            </tr>
+            <tr>
+                <td>Makerspace Club</td>
+                <td>A creative space for students to work on DIY projects, 3D printing, woodworking, and other hands-on activities.
+                    There are around 9 students active in the club </td>
+                <td>Wednesday at 3:30 PM - 5:00 PM <br> Fridays at 2:30 PM -5:00 PM</td>
+
+            </tr>
+        </table>
+        <boxquote>
+            "Joining a club is a great way to explore your interests, make new friends, and develop valuable skills that will benefit you in the future."
+            - Hubbard High School CS Department
+        </boxquote>
+        <h2>Join a Club</h2>
+        <form name="StemClubForm" onsubmit="return validateForm()">
+            <label for="name">Full Name (required):</label>
+            <input type="text" id="name" name="name" /><br />
+            <label for="grade">Grade Level (required):</label>
+            <select id="grade" name="grade">
+                <option value="" selected disabled>Select your grade level</option>
+                <option value="9">9th Grade</option>
+                <option value="10">10th Grade</option>
+                <option value="11">11th Grade</option>
+                <option value="12">12th Grade</option>
+            </select><br />
+            <label for="email">Email Address: (required) </label>
+            <input type="text" id="email" name="email" /><br />
+            <label for="club">Select Club:(required atleast one)</label>
+            <select id="club" name="club" multiple size="4">
+                <option value="" selected disabled>Select one or more clubs to join</option>
+                <option value="Chi-Craft Club">Chi-Craft Club</option>
+                <option value="SWIT Club">SWIT Club</option>
+                <option value="Makerspace Club">Makerspace Club</option>
+            </select><br />
+            
+            <textarea class="formBox" id="message" name="message" placeholder="Why do you want to join one or more clubs?" rows="4"></textarea><br/>
+            <textarea class="formBox" id="message2" name="message2" placeholder="What skills or interests do you bring to the club?" rows="4"></textarea><br />
+            <textarea class="formBox" id="message3" name="message3" placeholder="Do you have any questions for the club sponsors?" rows="4"></textarea><br />
+
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Subscribe to our newsletter for updates on club activities and events.</label><br />
+            <input type="submit" value="Join a Club">
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>

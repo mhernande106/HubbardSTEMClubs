@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#crest {
+    text-align: center;
+}
+/* Page background + font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffffbd; 
+  color: #000000;
+}
+
+/* White card centered */
+.page {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(119, 255, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Navigation Bar at the top */
+nav {
+  background-color: #850a04; 
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #00eeffea;
+}
+
+/* Headings */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #750404;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* Table container (makes the box even & centered) */
+.table-box {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  width: 100%;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 14px;
+  border: 1px solid #000000a3;
+  vertical-align: top;
+}
+
+th {
+  background-color: #dbe4de3b;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+}
+
+/* FORM BOX (makes it symmetrical and colorful) */
+form {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #3b3736bd;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+/* Form labels */
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Form inputs */
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #9dbfa3;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  margin-top: 18px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: #9a0909;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Submit button color change when hovering over */
+form input[type="submit"]:hover {
+  background-color: #38b8d4a0;
+}
+
+/* Adjust for phones */
+@media (max-width: 600px) {
+  .page {
+    padding: 18px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}   
+
+/* Make the long-answer boxes bigger and easier to read */
+.formBox {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1.1rem;      /* bigger text inside textarea */
+  border-radius: 6px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+  resize: vertical;        /* student can stretch it if needed */
+}
+
+/* Make form questions (labels) bigger */
+form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 1.2rem;   /* bigger and easier to read */
+  color: #ffffff;
+}
+
+
+
