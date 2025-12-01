@@ -55,7 +55,7 @@
         <h2>Join a Club</h2>
         <form name="StemClubForm" onsubmit="return validateForm()">
             <label for="name">Full Name (required):</label>
-            <input type="text" id="name" name="name" /><br>
+            <input type="text" id="name" name="name"><br>
             <label for="grade">Grade Level (required):</label>
             <select id="grade" name="grade">
                 <option value="" selected disabled>Select your grade level</option>
@@ -65,7 +65,7 @@
                 <option value="12">12th Grade</option>
             </select><br>
             <label for="email">Email Address: (required) </label>
-            <input type="text" id="email" name="email" /><br>
+            <input type="text" id="email" name="email"><br>
             <label for="club">Select Club:(required atleast one)</label>
             <select id="club" name="club" multiple size="4">
                 <option value="" selected disabled>Select one or more clubs to join</option>
@@ -78,7 +78,7 @@
             <textarea class="formBox" id="message2" name="message2" placeholder="What skills or interests do you bring to the club?" rows="4"></textarea><br>
             <textarea class="formBox" id="message3" name="message3" placeholder="Do you have any questions for the club sponsors?" rows="4"></textarea><br>
 
-            <input type="checkbox" id="newsletter" name="newsletter" />
+            <input type="checkbox" id="newsletter" name="newsletter">
             <label for="newsletter">Subscribe to our newsletter for updates on club activities and events.</label><br>
             <input type="submit" value="Join a Club">
         </form>
