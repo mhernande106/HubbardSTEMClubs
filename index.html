@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
         <title>Hubbard High School Clubs </title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div id="crest">
-            <img src="Images/Hubbard Crest Final1.jpg" alt="Hubbard High School Logo" width="150" height="150">
+            <img src="Images/Hubbard_Crest.jpg" alt="Hubbard High School Logo" width="150" height="150">
         </div>
         
         <nav>
@@ -22,7 +22,7 @@
             to explore their passions, collaborate on projects, and develop new skills.
         </p>
         <h2>Available Clubs</h2>
-        <table border="1px">
+        <table>
             <tr>
                 <th>Club Name</th>
                 <th>Description</th>
@@ -48,14 +48,14 @@
 
             </tr>
         </table>
-        <boxquote>
-            "Joining a club is a great way to explore your interests, make new friends, and develop valuable skills that will benefit you in the future."
+        
+            <p id="quote">"Joining a club is a great way to explore your interests, make new friends, and develop valuable skills that will benefit you in the future."
             - Hubbard High School CS Department
-        </boxquote>
+            </p>
         <h2>Join a Club</h2>
         <form name="StemClubForm" onsubmit="return validateForm()">
             <label for="name">Full Name (required):</label>
-            <input type="text" id="name" name="name" /><br />
+            <input type="text" id="name" name="name" /><br>
             <label for="grade">Grade Level (required):</label>
             <select id="grade" name="grade">
                 <option value="" selected disabled>Select your grade level</option>
@@ -63,23 +63,23 @@
                 <option value="10">10th Grade</option>
                 <option value="11">11th Grade</option>
                 <option value="12">12th Grade</option>
-            </select><br />
+            </select><br>
             <label for="email">Email Address: (required) </label>
-            <input type="text" id="email" name="email" /><br />
+            <input type="text" id="email" name="email" /><br>
             <label for="club">Select Club:(required atleast one)</label>
             <select id="club" name="club" multiple size="4">
                 <option value="" selected disabled>Select one or more clubs to join</option>
                 <option value="Chi-Craft Club">Chi-Craft Club</option>
                 <option value="SWIT Club">SWIT Club</option>
                 <option value="Makerspace Club">Makerspace Club</option>
-            </select><br />
+            </select><br>
             
-            <textarea class="formBox" id="message" name="message" placeholder="Why do you want to join one or more clubs?" rows="4"></textarea><br/>
-            <textarea class="formBox" id="message2" name="message2" placeholder="What skills or interests do you bring to the club?" rows="4"></textarea><br />
-            <textarea class="formBox" id="message3" name="message3" placeholder="Do you have any questions for the club sponsors?" rows="4"></textarea><br />
+            <textarea class="formBox" id="message" name="message" placeholder="Why do you want to join one or more clubs?" rows="4"></textarea><br>
+            <textarea class="formBox" id="message2" name="message2" placeholder="What skills or interests do you bring to the club?" rows="4"></textarea><br>
+            <textarea class="formBox" id="message3" name="message3" placeholder="Do you have any questions for the club sponsors?" rows="4"></textarea><br>
 
             <input type="checkbox" id="newsletter" name="newsletter" />
-            <label for="newsletter">Subscribe to our newsletter for updates on club activities and events.</label><br />
+            <label for="newsletter">Subscribe to our newsletter for updates on club activities and events.</label><br>
             <input type="submit" value="Join a Club">
         </form>
         <script src="script.js"></script>
